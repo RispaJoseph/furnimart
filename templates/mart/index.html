@@ -249,7 +249,7 @@
                         <div class="card-1">
                             <figure class=" img-hover-scale overflow-hidden">
                                 {% if c.image %}
-                                <a href="shop-grid-right.html"><img src="{{c.image.url}}" alt=""></a>
+                                <a href="{% url 'appmart:category_product_list' c.cid%}"><img src="{{c.image.url}}" alt=""></a>
                                 {% else %}
                                 <p>No image</p>
                                 {% endif %}

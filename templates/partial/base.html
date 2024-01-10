@@ -362,9 +362,9 @@
                                   
                               </li>
                               <li>
-                                  <a href="page-about.html">About</a>
+                                  <a href="#">About</a>
                               </li>
-                              <li><a href="blog-category-grid.html">Categories <i class="fi-rs-angle-down"></i></a>
+                              <li><a href="{% url 'appmart:category' %}">Categories <i class="fi-rs-angle-down"></i></a>
                                 <ul class="sub-menu">
                                     {%for c in categories%}
                                     <li><a href="{% url 'appmart:category_product_list' c.cid%}">{{c.title}}</a></li>
@@ -383,7 +383,7 @@
                                       <li><a href="#">About Us</a></li>
                                       <li><a href="#">Contact</a></li>
                                       <li><a href="{%url 'appmart:dashboard' %}">My Account</a></li>
-                                      <li><a href="page-login-register.html">login/register</a></li>
+                                      <li><a href="{%url 'account:login' %}">login/register</a></li>
                                       <!-- <li><a href="page-purchase-guide.html">Purchase Guide</a></li>
                                       <li><a href="page-privacy-policy.html">Privacy Policy</a></li>
                                       <li><a href="page-terms.html">Terms of Service</a></li>
@@ -391,7 +391,7 @@
                                   </ul>
                               </li>
                               <li>
-                                  <a href="page-contact.html">Contact</a>
+                                  <a href="#">Contact</a>
                               </li>
                           </ul>
                       </nav>
